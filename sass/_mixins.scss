@@ -1,0 +1,8 @@
+@mixin planetImageMobile($image) {
+    grid-row: 1/3; 
+    width: 100%;
+    height: 100%;
+    background-image: url($image);
+    background-position: center;
+    background-size: cover;
+}
