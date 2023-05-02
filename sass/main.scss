@@ -1,6 +1,4 @@
-@import './colors';
-@import './animations';
-@import './mixins';
+@use 'utilities' as *;
 
 *,
 *::before,
