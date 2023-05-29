@@ -280,34 +280,37 @@ h1.company-name {
             }
         }
 
-        &--one{
-            .img{
-                
+        &--one {
+            .img {
+
                 @include planetImageMobile('../img/earth_small.jpg');
             }
         }
-        &--two{
-            .img{
-                
+
+        &--two {
+            .img {
+
                 @include planetImageMobile('../img/mars_small.jpg');
             }
         }
-        &--three{
-            .img{
-                
+
+        &--three {
+            .img {
+
                 @include planetImageMobile('../img/venus_small.jpg');
             }
         }
-        &--four{
-            .img{
-                
+
+        &--four {
+            .img {
+
                 @include planetImageMobile('../img/saturn_small.jpg');
             }
         }
 
 
 
-        
+
 
     }
 
@@ -315,9 +318,80 @@ h1.company-name {
 }
 
 
+// FOOTER 
+
+.footer {
+    background-color: #333;
+    padding-top: 2em;
+
+    &__boxes {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        h3 {
+            font-size: 2.8rem;
+            font-family: sans-serif;
+            line-height: 3rem;
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+            margin-top: 0.5em;
+        }
+
+        .socials {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 3em 0 ;
+
+            li {
+                margin: 0 2em;
+                list-style: none;
+
+                a {
+                    text-decoration: none;
+                    font-size: 2.4rem;
+                    color: $white;
+
+
+                    i {
+                        transition: color .5s ease;
+                    }
+
+                }
+
+                a:hover i {
+                    color: $blue;
+                }
+            }
+
+
+
+
+           
+        }
+
+
+
+    }
+
+
+    &__bottom{
+        padding-bottom: 0.5em; 
+
+        p{
+            font-size: 1.8rem;
+            font-size: sans-serif;
+            text-align: center;
+        }
+    }
+
+}
+
 
 @import './utilities/medium';
 @import './utilities/large';
-
-
-

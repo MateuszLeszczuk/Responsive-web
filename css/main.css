@@ -51,6 +51,9 @@
   .header__arrow-icon {
     width: 50px;
   }
+  .header .hamburger {
+    display: none;
+  }
   .nav {
     grid-column: 1/2;
     grid-row: 1/2;
@@ -77,9 +80,6 @@
   .nav__link:hover::before {
     animation: pulse 1s;
   }
-  .hamburger {
-    display: none;
-  }
   .planets__box {
     display: grid;
     grid-template-rows: repeat(2, 1fr);
@@ -91,6 +91,7 @@
   }
   .planets__planet--one .img {
     grid-row: 1/3;
+    grid-column: 1/-1;
     width: 100%;
     height: 100%;
     background-image: url("../img/earth_big.jpg");
@@ -103,6 +104,7 @@
   }
   .planets__planet--two .img {
     grid-row: 1/3;
+    grid-column: 1/-1;
     width: 100%;
     height: 100%;
     background-image: url("../img/mars_big.jpg");
@@ -115,6 +117,7 @@
   }
   .planets__planet--three .img {
     grid-row: 1/3;
+    grid-column: 1/-1;
     width: 100%;
     height: 100%;
     background-image: url("../img/venus_big.jpg");
@@ -127,6 +130,7 @@
   }
   .planets__planet--four .img {
     grid-row: 1/3;
+    grid-column: 1/-1;
     width: 100%;
     height: 100%;
     background-image: url("../img/saturn_big.jpg");
@@ -378,6 +382,7 @@ h1.company-name {
 }
 .planets__planet--one .img {
   grid-row: 1/3;
+  grid-column: 1/-1;
   width: 100%;
   height: 100%;
   background-image: url("../img/earth_small.jpg");
@@ -386,6 +391,7 @@ h1.company-name {
 }
 .planets__planet--two .img {
   grid-row: 1/3;
+  grid-column: 1/-1;
   width: 100%;
   height: 100%;
   background-image: url("../img/mars_small.jpg");
@@ -394,6 +400,7 @@ h1.company-name {
 }
 .planets__planet--three .img {
   grid-row: 1/3;
+  grid-column: 1/-1;
   width: 100%;
   height: 100%;
   background-image: url("../img/venus_small.jpg");
@@ -402,11 +409,62 @@ h1.company-name {
 }
 .planets__planet--four .img {
   grid-row: 1/3;
+  grid-column: 1/-1;
   width: 100%;
   height: 100%;
   background-image: url("../img/saturn_small.jpg");
   background-position: center;
   background-size: cover;
+}
+
+.footer {
+  background-color: #333;
+  padding-top: 2em;
+}
+.footer__boxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.footer__boxes h3 {
+  font-size: 2.8rem;
+  font-family: sans-serif;
+  line-height: 3rem;
+  text-align: center;
+}
+.footer__boxes p {
+  text-align: center;
+  margin-top: 0.5em;
+}
+.footer__boxes .socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3em 0;
+}
+.footer__boxes .socials li {
+  margin: 0 2em;
+  list-style: none;
+}
+.footer__boxes .socials li a {
+  text-decoration: none;
+  font-size: 2.4rem;
+  color: #fff;
+}
+.footer__boxes .socials li a i {
+  transition: color 0.5s ease;
+}
+.footer__boxes .socials li a:hover i {
+  color: #1770a8;
+}
+.footer__bottom {
+  padding-bottom: 0.5em;
+}
+.footer__bottom p {
+  font-size: 1.8rem;
+  font-size: sans-serif;
+  text-align: center;
 }
 
 @media (min-width: 768px) {
@@ -479,6 +537,9 @@ h1.company-name {
   .header__arrow-icon {
     width: 50px;
   }
+  .header .hamburger {
+    display: none;
+  }
   .nav {
     grid-column: 1/2;
     grid-row: 1/2;
@@ -505,9 +566,6 @@ h1.company-name {
   .nav__link:hover::before {
     animation: pulse 1s;
   }
-  .hamburger {
-    display: none;
-  }
   .planets__box {
     display: grid;
     grid-template-rows: repeat(2, 1fr);
@@ -519,6 +577,7 @@ h1.company-name {
   }
   .planets__planet--one .img {
     grid-row: 1/3;
+    grid-column: 1/-1;
     width: 100%;
     height: 100%;
     background-image: url("../img/earth_big.jpg");
@@ -531,6 +590,7 @@ h1.company-name {
   }
   .planets__planet--two .img {
     grid-row: 1/3;
+    grid-column: 1/-1;
     width: 100%;
     height: 100%;
     background-image: url("../img/mars_big.jpg");
@@ -543,6 +603,7 @@ h1.company-name {
   }
   .planets__planet--three .img {
     grid-row: 1/3;
+    grid-column: 1/-1;
     width: 100%;
     height: 100%;
     background-image: url("../img/venus_big.jpg");
@@ -555,10 +616,11 @@ h1.company-name {
   }
   .planets__planet--four .img {
     grid-row: 1/3;
+    grid-column: 1/-1;
     width: 100%;
     height: 100%;
     background-image: url("../img/saturn_big.jpg");
     background-position: center;
     background-size: cover;
   }
-}
+}/*# sourceMappingURL=main.css.map */
