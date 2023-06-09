@@ -346,7 +346,7 @@ h1.company-name {
             display: flex;
             justify-content: center;
             align-items: center;
-            margin: 3em 0 ;
+            margin: 3em 0;
 
             li {
                 margin: 0 2em;
@@ -372,7 +372,7 @@ h1.company-name {
 
 
 
-           
+
         }
 
 
@@ -380,10 +380,10 @@ h1.company-name {
     }
 
 
-    &__bottom{
-        padding-bottom: 0.5em; 
+    &__bottom {
+        padding-bottom: 0.5em;
 
-        p{
+        p {
             font-size: 1.8rem;
             font-size: sans-serif;
             text-align: center;
@@ -391,6 +391,40 @@ h1.company-name {
     }
 
 }
+
+
+
+
+.cookiebanner {
+
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 250;
+    padding: 2em 4em;
+    background-color: black;
+
+    .text {
+        font-size: 1.6rem;
+        font-family: sans-serif;
+
+    }
+
+
+    &__btn {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+
+        cursor: pointer;
+
+
+        
+    }
+}
+
+
 
 
 @import './utilities/medium';

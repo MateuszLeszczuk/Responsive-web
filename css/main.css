@@ -467,6 +467,26 @@ h1.company-name {
   text-align: center;
 }
 
+.cookiebanner {
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 250;
+  padding: 2em 4em;
+  background-color: black;
+}
+.cookiebanner .text {
+  font-size: 1.6rem;
+  font-family: sans-serif;
+}
+.cookiebanner__btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
 @media (min-width: 768px) {
   h1.company-name {
     font-size: 4rem;
